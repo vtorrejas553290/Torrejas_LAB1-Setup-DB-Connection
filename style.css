@@ -1,0 +1,171 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ========== BODY ========== */
+body {
+    background: linear-gradient(135deg, #e0f2ff, #f4f9ff);
+    padding: 30px;
+    min-height: 100vh;
+}
+
+/* ========== NAVIGATION ========== */
+div[style] {
+    background: linear-gradient(90deg, #0f172a, #1e3a8a);
+    padding: 14px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+div[style] a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+div[style] a:hover {
+    color: #38bdf8;
+}
+
+/* ========== HEADINGS ========== */
+h2 {
+    margin: 20px 0;
+    color: #0f172a;
+}
+
+/* ========== TABLES ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+table th {
+    background: #1e40af;
+    color: white;
+    padding: 14px;
+    font-weight: 600;
+    text-align: left;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #eef2ff;
+}
+
+table tr:hover {
+    background: #f1f5ff;
+    transition: 0.2s;
+}
+
+/* ========== BUTTONS ========== */
+button, .btn {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(37,99,235,0.4);
+}
+
+/* ========== LINKS ========== */
+a {
+    color: #1d4ed8;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #2563eb;
+}
+
+/* ========== FORMS ========== */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+}
+
+/* ========== DASHBOARD CARDS AUTO STYLE ========== */
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+ul li {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+    font-size: 16px;
+}
+
+ul li b {
+    font-size: 22px;
+    display: block;
+    margin-top: 8px;
+    color: #1e3a8a;
+}
+/* ===== NAV BAR MODERN BLUE STYLE ===== */
+div[style*="display:flex"] {
+    background: linear-gradient(90deg, #0f172a, #1e3a8a);
+    padding: 15px 20px !important;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    align-items: center;
+}
+
+/* Remove ugly default hr */
+hr {
+    display: none;
+}
+
+/* Nav links */
+div[style*="display:flex"] a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+div[style*="display:flex"] a:hover {
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-2px);
+}
+
+/* Active click effect */
+div[style*="display:flex"] a:active {
+    transform: scale(0.95);
+}
