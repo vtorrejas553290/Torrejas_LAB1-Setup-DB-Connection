@@ -1,6 +1,6 @@
 <?php
 include "../db.php";
-$result = mysqli_query($conn, "SELECT * FROM clients ORDER BY created_at DESC");
+$result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
 ?>
 <!doctype html>
 <html>
@@ -14,15 +14,17 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY created_at DESC");
 <?php include "../nav.php"; ?>
 
 <h2>Clients</h2>
+
+<!-- Add Client Button -->
 <a href="clients_add.php"><button>Add Client</button></a>
 
+<!-- Clients Table -->
 <table>
 <tr>
   <th>ID</th>
   <th>Name</th>
   <th>Email</th>
   <th>Phone</th>
-  <th>Address</th>
   <th>Action</th>
 </tr>
 
@@ -32,14 +34,13 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY created_at DESC");
   <td><?php echo $row['full_name']; ?></td>
   <td><?php echo $row['email']; ?></td>
   <td><?php echo $row['phone']; ?></td>
-  <td><?php echo $row['address']; ?></td>
   <td>
-    <a class="action-link" href="clients_delete.php?id=<?php echo $row['client_id']; ?>">Delete</a>
+    <a href="clients_edit.php?id=<?php echo $row['client_id']; ?>">Edit</a>
   </td>
 </tr>
 <?php } ?>
 </table>
 
-</div>
+</div> 
 </body>
 </html>
