@@ -31,9 +31,6 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
 </table>
 </body>
 </html>
-
-
-pages/clients_edit.php
  
 <?php
 include "../db.php";
@@ -68,8 +65,7 @@ if (isset($_POST['update'])) {
 <head><meta charset="utf-8"><title>Edit Client</title></head>
 <body>
 <div class="container">
-<?php include "../nav.php"; ?>
- 
+    
 <h2>Edit Client</h2>
 <p style="color:red;"><?php echo $message; ?></p>
  
