@@ -37,6 +37,6 @@ $result = mysqli_query($conn, "SELECT * FROM tools");
 <?php } ?>
 </table>
 
-</div> <!-- container -->
+</div> 
 </body>
 </html>

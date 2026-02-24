@@ -64,8 +64,7 @@ if (isset($_POST['update'])) {
 <html>
 <head><meta charset="utf-8"><title>Edit Client</title></head>
 <body>
-<div class="container">
-    
+<div class="container">    
 <h2>Edit Client</h2>
 <p style="color:red;"><?php echo $message; ?></p>
  
