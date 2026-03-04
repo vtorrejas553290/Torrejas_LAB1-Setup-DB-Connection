@@ -14,7 +14,6 @@ $result = mysqli_query($conn, $sql);
 <html>
 <head><meta charset="utf-8"><title>Payments</title></head>
 <link rel="stylesheet" href="/assessment_beginner/style.css">
-
 <body>
 <div class="container">
 <?php include "../nav.php"; ?>

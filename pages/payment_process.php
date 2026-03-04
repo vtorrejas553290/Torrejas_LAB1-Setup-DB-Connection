@@ -1,5 +1,5 @@
 <?php
-include "../config/db.php";
+include "../db.php";
  
  
 $booking_id = $_GET['booking_id'];
@@ -57,10 +57,9 @@ if (isset($_POST['pay'])) {
 <html>
 <head><meta charset="utf-8"><title>Process Payment</title></head>
 <link rel="stylesheet" href="/assessment_beginner/style.css">
-
 <body>
 <div class="container">
-<?php include "../components/nav.php"; ?>
+<?php include "../nav.php"; ?>
  
  
 <h2>Process Payment (Booking #<?php echo $booking_id; ?>)</h2>
@@ -93,4 +92,3 @@ if (isset($_POST['pay'])) {
 </div>
 </body>
 </html>
- 
