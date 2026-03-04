@@ -14,8 +14,13 @@ $revenue = $revRow['s'];
   <meta charset="utf-8">
   <title>Dashboard</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .dashboard-actions { margin-top: 40px; }
+    .dashboard-actions a { margin-right: 15px; }
+  </style>
 </head>
 <body>
+<div class="container">
 <?php include "nav.php"; ?>
  
 <h2>Dashboard</h2>
@@ -27,11 +32,11 @@ $revenue = $revRow['s'];
   <li>Total Revenue: <b>₱<?php echo number_format($revenue,2); ?></b></li>
 </ul>
  
-<p>
-  Quick links:
-  <a href="/assessment_beginner/pages/clients_add.php">Add Client</a> |
-  <a href="/assessment_beginner/pages/bookings_create.php">Create Booking</a>
-</p>
- 
+<div class="dashboard-actions">
+  <a href="/assessment_beginner/pages/clients_add.php"><button>+ Add Client</button></a>
+  <a href="/assessment_beginner/pages/bookings_create.php"><button>+ Create Booking</button></a>
+</div>
+
+</div>
 </body>
 </html>
