@@ -135,6 +135,7 @@ ul li b {
     margin-top: 8px;
     color: #1e3a8a;
 }
+
 /* ===== NAV BAR MODERN BLUE STYLE ===== */
 div[style*="display:flex"] {
     background: linear-gradient(90deg, #0f172a, #1e3a8a);
