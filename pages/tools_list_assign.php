@@ -53,7 +53,7 @@
   
   <hr>
   
-  <h3>Assign Tool to Booking</h3>
+  <h2>Assign Tool to Booking</h2>
   <form method="post">
     <label>Booking ID</label><br>
     <select name="booking_id">

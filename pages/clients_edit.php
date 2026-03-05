@@ -11,7 +11,7 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
 <?php include "../nav.php"; ?>
  
 <h2>Clients</h2>
-<a href="clients_add.php"><button>Add Client</button></a>
+<a href="clients_add.php"><button>+ Add Client</button></a>
  
 <table border="1" cellpadding="8">
   <tr>
